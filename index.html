@@ -19,7 +19,7 @@
          display:flex; align-items:center; justify-content:center; padding:16px; }
   .box { width:100%; max-width:380px; background:var(--card); border:1px solid var(--line);
          border-radius:14px; padding:36px 32px 28px; box-shadow:0 8px 30px rgba(0,0,0,.06); }
-  .brand { font-size:13px; letter-spacing:.08em; color:var(--muted); text-transform:uppercase; }
+  .brand { font-size:13px; letter-spacing:.02em; color:var(--muted); }
   h1 { margin:6px 0 4px; font-size:24px; }
   .sub { margin:0 0 26px; color:var(--muted); font-size:14px; }
   label { display:block; font-size:13px; font-weight:600; margin:14px 0 6px; }
@@ -35,7 +35,7 @@
 </head>
 <body>
 <form class="box" id="f" autocomplete="on">
-  <div class="brand">Kornerstone</div>
+  <div class="brand">Kornerstone &amp; Company LLC</div>
   <h1>Margin Tool</h1>
   <p class="sub">덤핑률 분석 프로그램</p>
 
@@ -47,12 +47,12 @@
 
   <button id="btn" type="submit">로그인</button>
   <div class="err" id="err" role="alert"></div>
-  <div class="foot">업로드한 데이터는 브라우저에서만 처리되며 저장되지 않습니다.<br>v2026.11.19-1334</div>
+  <div class="foot">업로드한 데이터는 브라우저에서만 처리되며 저장되지 않습니다.<br>v2026.11.19-1337</div>
 </form>
 
 <script>
 // 암호화된 프로그램 본문 (build/encrypt.py 가 채워 넣음)
-const PAYLOAD = {"iter": 600000, "salt": "vxzO+lpG/QESQc80SUgAeQ==", "iv": "/gOFeL3baM+uLGyK", "ct": "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"};
+const PAYLOAD = {"iter": 600000, "salt": "HuYZ/AIJJGxdpfRNYLsP2g==", "iv": "c5Xb9kThEHIYdhB2", "ct": "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"};
 
 const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
 
