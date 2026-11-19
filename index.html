@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Margin Tool · 로그인</title>
+<title>M.Tool</title>
 <style>
   :root { --bg:#eef1f5; --card:#ffffff; --ink:#1c2430; --muted:#6b7684; --line:#d9dee5;
           --accent:#1f4e8c; --accent-ink:#ffffff; --err:#c0392b; }
@@ -20,8 +20,7 @@
   .box { width:100%; max-width:380px; background:var(--card); border:1px solid var(--line);
          border-radius:14px; padding:36px 32px 28px; box-shadow:0 8px 30px rgba(0,0,0,.06); }
   .brand { font-size:13px; letter-spacing:.02em; color:var(--muted); }
-  h1 { margin:6px 0 4px; font-size:24px; }
-  .sub { margin:0 0 26px; color:var(--muted); font-size:14px; }
+  h1 { margin:6px 0 24px; font-size:24px; }
   label { display:block; font-size:13px; font-weight:600; margin:14px 0 6px; }
   input { width:100%; padding:11px 12px; font-size:15px; border:1px solid var(--line);
           border-radius:8px; background:transparent; color:var(--ink); outline:none; }
@@ -36,8 +35,7 @@
 <body>
 <form class="box" id="f" autocomplete="on">
   <div class="brand">Kornerstone &amp; Company LLC</div>
-  <h1>Margin Tool</h1>
-  <p class="sub">덤핑률 분석 프로그램</p>
+  <h1>M.Tool</h1>
 
   <label for="uid">아이디</label>
   <input id="uid" name="username" autocomplete="username" required autofocus>
@@ -47,12 +45,12 @@
 
   <button id="btn" type="submit">로그인</button>
   <div class="err" id="err" role="alert"></div>
-  <div class="foot">업로드한 데이터는 브라우저에서만 처리되며 저장되지 않습니다.<br>v2026.11.19-1337</div>
+  <div class="foot">업로드한 데이터는 브라우저에서만 처리되며 저장되지 않습니다.<br>v2026.11.19-1339</div>
 </form>
 
 <script>
 // 암호화된 프로그램 본문 (build/encrypt.py 가 채워 넣음)
-const PAYLOAD = {"iter": 600000, "salt": "HuYZ/AIJJGxdpfRNYLsP2g==", "iv": "c5Xb9kThEHIYdhB2", "ct": "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"};
+const PAYLOAD = {"iter": 600000, "salt": "S4/ntrJpihmwdKoAQbzNYQ==", "iv": "XxUiSmWBZHX+i9Bt", "ct": "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"};
 
 const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
 
